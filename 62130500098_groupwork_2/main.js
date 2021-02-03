@@ -1,9 +1,9 @@
 const app = {
     data() {
         return {
-            msg: 'Hello, Vue3'
+            msg: 'Hello, Vue3',
+            shown: true
         }
-    }
-
+    },
 }
-Vue.createApp(app).mount('#app')
+var mountedApp = Vue.createApp(app).mount('#app')

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!--JS-->
+    <script rel="stylesheet" src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/vue@next"></script>
+
+</head>
+<body>
+    <div id="app" class="padding">
+        <div class="col-md-8">
+            <!-- Column -->
+            <div class="card"> <img class="card-img-top" src="/images/3.jpg" alt="Card image cap">
+                <div class="card-body little-profile text-center">
+                    <div class="pro-img"><img src="/images/2.JPG" alt="user"></div>
+                    <h3 class="m-b-0"> {{ name }} </h3>
+                    <p> {{job}} </p> <a href="javascript:void(0)" class="m-t-10 waves-effect waves-dark btn btn-primary btn-md btn-rounded" data-abc="true">Follow</a>
+                    <div class="row text-center m-t-20">
+                        <div class="col-lg-4 col-md-4 m-t-20">
+                            <h3 class="m-b-0 font-light"> {{ articlesnum }} </h3><small> {{ articles }} </small>
+                        </div>
+                        <div class="col-lg-4 col-md-4 m-t-20">
+                            <h3 class="m-b-0 font-light"> {{ followersnum }} </h3><small> {{followers}} </small>
+                        </div>
+                        <div class="col-lg-4 col-md-4 m-t-20">
+                            <h3 class="m-b-0 font-light"> {{followingnum}} </h3><small> {{following}} </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./profile.js"></script>
+</body>
+</html>

@@ -17,17 +17,25 @@
     <!-- Vue CDN -->
     <script src="https://unpkg.com/vue@next"></script>
 
+    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
+     <!-- Vue CDN -->
+     <script src="https://unpkg.com/vue@next"></script>
+
 </head>
 <body>
-  <div id="app" class="h-screen max-w-2xl bg-indigo-200 mx-auto">
-    <p class="text-pink-500 text-lg tracking-wide front-semibold">INTRODUCTION</p>
-    <h1 class="text-5xl front-extrabold ml-5">Tailwind stories</h1>
-    <div class="flex justify-center items-center">
-      <div class="rounder-full p-1 border bg-gradient-to-tr form-yellow-400 to-pink-500">
-        <img class="h-24 w-24 rounder-full ">
+    <!--<div id="app" class="h-screen w-full bg-gray-200 flex items-start justify-start">
+      <img src="./images/1.jpg" class="w-1/3 h-full">
+      <div class="w-full flex items-center justify-end">
+        <i class="material-icons">face</i>
+        <p class="font-semibold text-xl tracking-wider uppercase px-3"> {{ msg }}</p>
       </div>
+    </div>-->
+    <div id="app" class="p-8">
+      {{msg}}
+      <p v-if="shown">You can see this message.</p>
+      <p v-show="shown">You can see this message.(v.show)</p>
+      <a v-bind:href="url">Please click here.</a>
     </div>
-  </div>
 
   <!-- my main.js -->
   <script src="./main.js"></script>
